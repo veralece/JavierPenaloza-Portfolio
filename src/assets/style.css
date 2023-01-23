@@ -1,0 +1,42 @@
+@import url(./normalize.css);
+
+:root {
+  --dark-mode-text: #fff;
+  --light-mode-text: #1a2e47;
+  --dark-mode-bg-color: #242424;
+  --light-mode-bg-color: var(--dark-mode-text);
+  --nav-height: 5rem;
+  background-color: var(--light-mode-bg-color);
+  color: var(--light-mode-text);
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+}
+
+main {
+  transform: translateY(var(--nav-height));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--dark-mode-text);
+    background-color: var(--dark-mode-bg-color);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
