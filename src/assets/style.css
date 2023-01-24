@@ -3,11 +3,16 @@
 :root {
   --dark-mode-text: #fff;
   --dark-mode-bg-color: #242424;
+  --dark-mode-secondary-color: var(--light-mode-text);
+  --dark-link-hover: #747bff;
+  --light-link-hover: #9966ff;
   --light-mode-text: #1a2e47;
   --light-mode-bg-color: var(--dark-mode-text);
   --light-mode-secondary-color: #f5f3ed;
   --nav-height: 5rem;
+  --link-hover: var(--light-link-hover);
   --text-color: var(--light-mode-text);
+  --secondary-color: var(--light-mode-secondary-color);
   --bg-color: var(--light-mode-bg-color);
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -29,8 +34,16 @@ main {
   transform: translateY(var(--nav-height));
 }
 
+a:hover {
+  color: var(--link-hover);
+}
+
 .grid {
   display: grid;
+}
+
+.flex {
+  display: flex;
 }
 
 .link {
@@ -41,14 +54,11 @@ main {
   :root {
     --text-color: var(--dark-mode-text);
     --bg-color: var(--dark-mode-bg-color);
-  }
-
-  a:hover {
-    color: #747bff;
+    --secondary-color: var(--dark-mode-secondary-color);
+    --link-hover: var(--dark-link-hover);
   }
 
   button {
     background-color: #f9f9f9;
   }
 }
-

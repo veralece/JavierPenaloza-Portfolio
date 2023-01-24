@@ -27,15 +27,18 @@ function handleChange(event: Event, shouldClose?: boolean) {
 </script>
 
 <template>
-    <nav id="navigation">
-        <input id="display-nav-btn" :checked="navigationShown" type="checkbox" @change.prevent="handleChange" />
-        <label id='display-nav-label' htmlFor='display-nav-btn' :aria-label="ariaMessage">
-            <svg class='hamburger' viewBox='0 0 100 100' width='60' aria-hidden="true">
-                <rect class='line top' rx="5" width='80' x="10" height="10" y="25"></rect>
-                <rect class='line mid' rx="5" width='80' x="10" height="10" y="45"></rect>
-                <rect class='line bot' rx="5" width='80' x="10" height="10" y="65"></rect>
-            </svg>
-        </label>
+    <nav id="navigation" class="flex">
+        <div id="logo-group" class="flex">
+            <router-link id="logo-link" to="/"></router-link>
+            <input id="display-nav-btn" :checked="navigationShown" type="checkbox" @change.prevent="handleChange" />
+            <label id='display-nav-label' htmlFor='display-nav-btn' class="flex" :aria-label="ariaMessage">
+                <svg class='hamburger' viewBox='0 0 100 100' width='60' aria-hidden="true">
+                    <rect class='line top' rx="5" width='80' x="10" height="10" y="25"></rect>
+                    <rect class='line mid' rx="5" width='80' x="10" height="10" y="45"></rect>
+                    <rect class='line bot' rx="5" width='80' x="10" height="10" y="65"></rect>
+                </svg>
+            </label>
+        </div>
         <ul id="links" @click.prevent="(e: Event) => handleChange(e, true)" class="grid" :class="navClass">
             <li><router-link class="link" to="/">home();</router-link></li>
             <li><router-link class="link" to="/resume">resume();</router-link></li>
@@ -45,6 +48,13 @@ function handleChange(event: Event, shouldClose?: boolean) {
 </template>
 
 <style scoped>
+ul {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
 /*Begin mobile nav button classes*/
 .hamburger .line {
     transition: y 200ms 200ms, transform 200ms, opacity 200ms 200ms;
@@ -91,7 +101,16 @@ input:checked~.mobile-nav {
 }
 
 #display-nav-label {
-    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+
+#display-nav-label:hover .line,
+#display-nav-label:hover::before,
+#display-nav-label:hover::after {
+    color: var(--link-hover);
+    stroke: var(--link-hover);
+    fill: var(--link-hover);
 }
 
 #display-nav-label::after,
@@ -111,30 +130,37 @@ input:checked~.mobile-nav {
 }
 
 #navigation {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-end;
-    column-gap: 0;
     position: fixed;
     top: 0;
     width: 100%;
     height: var(--nav-height);
+    background-color: var(--bg-color);
+}
 
+#logo-link {
+    max-height: calc(var(--nav-height) - 20px);
+    height: 100%;
+    width: 50%;
+    background: url(/logo_wordmark.svg) no-repeat;
+}
+
+#logo-group {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
 }
 
 #links {
-    margin-block-end: 0;
-    margin-block-start: 0;
-    list-style-type: none;
-    padding-inline-start: 0;
-    position: absolute;
     z-index: 10;
     top: var(--nav-height);
+    position: absolute;
     grid-template-rows: repeat(3, 20%);
     width: 100%;
     height: calc(100vh - var(--nav-height));
+    background-color: var(--secondary-color);
     transition: all ease-in-out 200ms;
-    background-color: var(--light-mode-secondary-color);
     font-family: monospace;
     font-weight: 700;
     text-align: center;
@@ -146,18 +172,42 @@ input:checked~.mobile-nav {
 
 #links.navigation-flyout {
     transform: translateX(0);
-    box-shadow: 0px 2px 5px 1px var(--text-color) ;
+    box-shadow: 0px 2px 5px 1px var(--text-color);
 }
 
 @media screen and (min-width: 768px) {
+
+    #links:not(.navigation-flyout) {
+        transform: translateX(200%);
+    }
+
+    #links.navigation-flyout {
+        transform: translateX(100%);
+    }
+
     #links {
+        border-radius: 1em 0px 0px 0em;
         width: 50%;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    #links:not(.navigation-flyout) {
+        transform: translateX(400%);
+    }
+
+    #links.navigation-flyout {
+        transform: translateX(300%);
+    }
+
     #links {
         width: 25%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #logo-link {
+        background: url(/logo_wordmark_light.svg) no-repeat;
     }
 }
 </style>
