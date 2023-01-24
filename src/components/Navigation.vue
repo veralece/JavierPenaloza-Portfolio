@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
-import { RouterLink } from 'vue-router';
 
 const navigationShown = ref<boolean>(false);
 
@@ -15,9 +14,14 @@ const ariaMessage = computed<string>(() => {
     return navigationShown.value ? "Hide Navigation" : "Show Navigation";
 });
 
-function handleChange(event: Event) {
+function handleChange(event: Event, shouldClose?: boolean) {
     const { checked } = event.target as HTMLInputElement;
-    navigationShown.value = checked;
+    if (shouldClose) {
+        navigationShown.value = false;
+    }
+    else {
+        navigationShown.value = checked;
+    }
 }
 
 </script>
@@ -32,10 +36,10 @@ function handleChange(event: Event) {
                 <rect class='line bot' rx="5" width='80' x="10" height="10" y="65"></rect>
             </svg>
         </label>
-        <ul id="links" :class="navClass">
-            <li>about();</li>
-            <li>resume();</li>
-            <li>projects();</li>
+        <ul id="links" @click.prevent="(e: Event) => handleChange(e, true)" class="grid" :class="navClass">
+            <li><router-link class="link" to="/">home();</router-link></li>
+            <li><router-link class="link" to="/resume">resume();</router-link></li>
+            <li><router-link class="link" to="/projects">projects();</router-link></li>
         </ul>
     </nav>
 </template>
@@ -45,8 +49,8 @@ function handleChange(event: Event) {
 .hamburger .line {
     transition: y 200ms 200ms, transform 200ms, opacity 200ms 200ms;
     transform-origin: center;
-    stroke: var(--light-mode-text);
-    fill: var(--light-mode-text);
+    stroke: var(--text-color);
+    fill: var(--text-color);
 }
 
 input:checked~label .hamburger .line {
@@ -75,6 +79,13 @@ input:checked~.mobile-nav {
 }
 
 /*End mobile nav button classes*/
+.link {
+    display: grid;
+    align-content: center;
+    text-decoration: none;
+    height: 100%;
+}
+
 #display-nav-btn {
     display: none;
 }
@@ -88,7 +99,7 @@ input:checked~.mobile-nav {
     font-size: 60px;
     place-self: center;
     transform: translateY(-5px);
-    color: var(--light-mode-text);
+    color: var(--text-color);
 }
 
 #display-nav-label::after {
@@ -102,15 +113,13 @@ input:checked~.mobile-nav {
 #navigation {
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
+    align-items: flex-end;
     column-gap: 0;
     position: fixed;
     top: 0;
     width: 100%;
     height: var(--nav-height);
 
-    /* DEV */
-    border: 1px solid black;
 }
 
 #links {
@@ -118,15 +127,17 @@ input:checked~.mobile-nav {
     margin-block-start: 0;
     list-style-type: none;
     padding-inline-start: 0;
-    display: grid;
+    position: absolute;
+    z-index: 10;
+    top: var(--nav-height);
+    grid-template-rows: repeat(3, 20%);
     width: 100%;
+    height: calc(100vh - var(--nav-height));
     transition: all ease-in-out 200ms;
-    background-color: var(--light-mode-bg-color);
+    background-color: var(--light-mode-secondary-color);
     font-family: monospace;
     font-weight: 700;
-
-    /* DEV */
-    border: 1px blue solid;
+    text-align: center;
 }
 
 #links:not(.navigation-flyout) {
@@ -135,5 +146,18 @@ input:checked~.mobile-nav {
 
 #links.navigation-flyout {
     transform: translateX(0);
+    box-shadow: 0px 2px 5px 1px var(--text-color) ;
+}
+
+@media screen and (min-width: 768px) {
+    #links {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #links {
+        width: 25%;
+    }
 }
 </style>

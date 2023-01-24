@@ -2,12 +2,15 @@
 
 :root {
   --dark-mode-text: #fff;
-  --light-mode-text: #1a2e47;
   --dark-mode-bg-color: #242424;
+  --light-mode-text: #1a2e47;
   --light-mode-bg-color: var(--dark-mode-text);
+  --light-mode-secondary-color: #f5f3ed;
   --nav-height: 5rem;
-  background-color: var(--light-mode-bg-color);
-  color: var(--light-mode-text);
+  --text-color: var(--light-mode-text);
+  --bg-color: var(--light-mode-bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   font-size: 16px;
@@ -26,10 +29,18 @@ main {
   transform: translateY(var(--nav-height));
 }
 
+.grid {
+  display: grid;
+}
+
+.link {
+  color: var(--text-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    color: var(--dark-mode-text);
-    background-color: var(--dark-mode-bg-color);
+    --text-color: var(--dark-mode-text);
+    --bg-color: var(--dark-mode-bg-color);
   }
 
   a:hover {
@@ -40,3 +51,4 @@ main {
     background-color: #f9f9f9;
   }
 }
+
