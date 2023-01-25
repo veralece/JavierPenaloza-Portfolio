@@ -1,0 +1,16 @@
+{
+    "education": [
+        {
+            "college": "Arizona State University",
+            "degree": "B.A.S., Ira A. Fulton School of Engineering",
+            "graduated": true,
+            "acquisitionDate": "August 2021"
+        },
+        {
+            "college": "Arizona Western College",
+            "degree": "A.A.S., Computer Information Systems",
+            "graduated": true,
+            "acquisitionDate": "May 2019"
+        }
+    ]
+}

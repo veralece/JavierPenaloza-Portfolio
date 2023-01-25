@@ -23,7 +23,6 @@ function handleChange(event: Event, shouldClose?: boolean) {
         navigationShown.value = checked;
     }
 }
-
 </script>
 
 <template>
@@ -42,7 +41,6 @@ function handleChange(event: Event, shouldClose?: boolean) {
         <ul id="links" @click.prevent="(e: Event) => handleChange(e, true)" class="grid" :class="navClass">
             <li><router-link class="link" to="/">home();</router-link></li>
             <li><router-link class="link" to="/resume">resume();</router-link></li>
-            <li><router-link class="link" to="/projects">projects();</router-link></li>
         </ul>
     </nav>
 </template>

@@ -4,14 +4,17 @@
   font-family: OpenSans;
   src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+
 @font-face {
   font-family: Raleway;
   src: url(./fonts/Raleway-VariableFont_wght.ttf);
 }
+
 @font-face {
   font-family: Raleway-Italics;
   src: url(./fonts/Raleway-Italic-VariableFont_wght.ttf);
 }
+
 :root {
   --dark-mode-text: #fff;
   --dark-mode-bg-color: #242424;
@@ -23,6 +26,7 @@
   --light-mode-secondary-color: #f5f3ed;
   --light-link-hover: #747bff;
 
+  --card-border-size: 5px;
   --nav-height: 5rem;
   --link-hover: var(--light-link-hover);
   --text-color: var(--light-mode-text);
@@ -48,12 +52,40 @@ body {
 main {
   transform: translateY(var(--nav-height));
 }
+
 a {
   color: #00ccff;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--link-hover);
+}
+
+.card {
+  max-width: 800px;
+  position: relative;
+  width: 85%;
+  padding: 1em 0;
+  margin: 1em auto;
+  box-shadow: -1px 1px 5px 0px var(--link-hover);
+  border-radius: 1em;
+  background-clip: padding-box;
+  border: solid var(--card-border-size) transparent;
+  background-color: var(--bg-color);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: inherit;
+  margin: calc(-1 * var(--card-border-size));
+  background: linear-gradient(to right, var(--text-color), var(--link-hover));
 }
 
 .grid {

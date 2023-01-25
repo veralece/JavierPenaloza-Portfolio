@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+import Projects from '../components/Projects.vue';
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
 
+onMounted(() => {
+    scrollToTop();
+});
 </script>
 <template>
     <article>
@@ -11,6 +19,7 @@
             <h2><span class="func-name">Who_Is_Javier</span><span class="code">()</span></h2>
             <ul>
                 <li>Arizona Native 🌵</li>
+                <li>Husband 🤵🏽</li>
                 <li>Cat & Dog Dad 🐈🐕</li>
                 <li>Fighting Game Enthusiast 🕹️</li>
                 <li>Game Developer 🕹️👨‍💻</li>
@@ -25,14 +34,18 @@
             <h2><span class="func-name">Skills</span><span class="code">()</span></h2>
             <ul>
                 <li><a href="https://learn.microsoft.com/en-us/dotnet/core/introduction">.NET</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">JavaScript</a></li>
+                <li><a
+                        href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">JavaScript</a>
+                </li>
                 <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-                <li>Vue</li>
-                <li>React</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Azure</li>
-                <li>git</li>
+                <li><a href="https://vuejs.org/">Vue</a></li>
+                <li><a href="https://reactjs.org/">React</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+                <li><a
+                        href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/?OCID=AIDcmm5edswduu_SEM_c919ed88e836143047d38e59a53c56ee:G:s&ef_id=c919ed88e836143047d38e59a53c56ee:G:s&msclkid=c919ed88e836143047d38e59a53c56ee">Azure</a>
+                </li>
+                <li><a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git">git</a></li>
             </ul>
             <h2><span class="func-name">Contact</span><span class="code">()</span></h2>
             <ul>
@@ -41,21 +54,25 @@
             </ul>
             <div aria-hidden="true">JaviShell> </div>
         </section>
+        <Projects />
     </article>
 </template>
 
 <style scoped>
 header {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 li {
     margin-bottom: .25em;
 }
 
-.func-name{
+.func-name {
     color: #c8f2fb;
 }
+
 .code {
     color: #efec23;
 }
@@ -85,8 +102,8 @@ li {
     background-color: #333;
     display: block;
     padding: .5em 1em;
-    font-family: Raleway;
-    font-weight: bold;
+    font-family: Raleway-Italics;
+    font-weight: normal;
     border-radius: 1em 1em 0 0;
 }
 

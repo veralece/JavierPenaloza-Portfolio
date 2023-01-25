@@ -1,0 +1,75 @@
+{
+    "projects": [
+        {
+            "projectTitle": "Tierra Caliente Restaurant",
+            "techStack": [
+                ".NET Core Web API",
+                "React",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "Owner of Tierra Caliente needed an updated website for their restaurant to support their new business processes.",
+            "approach": "Reviewed old site and current business processes with stakeholders to determine direction of website and internal processes.",
+            "solution": "Organization of menu and processes to make the restaurant operate more consistently, and a new site was created to facilitate catering request and online ordering.",
+            "results": "Business owner and stakeholders were pleased with the new solution, and look forward to growing their business with the new technologies and processes.",
+            "url": "https://www.tierracalientecatering.com",
+            "imgs": "tierra-caliente"
+        },
+        {
+            "projectTitle": "Undou: Exercise Logging Application",
+            "techStack": [
+                ".NET Core Web API",
+                "React",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "SQL Server",
+                "Entity Framework",
+                "Azure"
+            ],
+            "problem": "I had some friends and acquaintances who were hesitant to spend money on any sort of exercise tracking application, so I wanted to create a simple and free one for them.",
+            "approach": "I looked towards other exercise applications and noted features, aesthetic, and other aspects I liked. When the application reached a testable state, I had users test the site to get feedback and bug reports.",
+            "solution": "Created an exercise tracker application with the following features: creating workouts, calculating effort, and viewing history.",
+            "results": "The application is functioning with basic features, but due to financial constraints, the back-end isn't the snappiest. Next steps are to work on additional features, such as: creating workout templates, logging food, and implementing a social aspect as well.",
+            "url": "https://undou.app",
+            "imgs": "logger"
+        },
+        {
+            "projectTitle": "Zero Balance Calculator",
+            "techStack": [
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "Budgeting normally comes in the form of spreadsheets, but I wanted to create an app that makes it easy to add/remove income, expenses, and funds without having to manually adjust cells on a spreadsheet.",
+            "approach": "Looked at a typical Zero Balance budget sheet and broken it down into its smallest functional unit, then designed a top-down layout that a user would be able to follow.",
+            "solution": "An application that accepts input for financial items (e.g. an expense or income) and calculates the balances for each category and the final balance.",
+            "results": "Peers were happy to find the site intuitive and helpful since many of them were students with financial struggles.",
+            "url": "https://blue-stone-06da0c010.2.azurestaticapps.net/",
+            "imgs": "zero"
+        },
+        {
+            "projectTitle": "Portfolio Site",
+            "techStack": [
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "I needed a portfolio site to inform others about who I am, and showcase my projects and my resume.",
+            "approach": "I initially created a document outlining the content I wanted to display. Afterwards, I digitally sketched what the website would look like on mobile and desktop, which sort of doubled up as a sketch and a wireframe. Then I created mockups of the site utilizing the content in the document I mentioned earlier.",
+            "solution": "Utilized GitHub as repository and created site using Vue. I used Azure to host the site and Google Domains to customize the domain of this site.",
+            "results": "You're on the site now! You tell me!",
+            "url": "https://github.com/veralece/JavierPenaloza-Portfolio",
+            "imgs": ""
+        }
+    ]
+}
