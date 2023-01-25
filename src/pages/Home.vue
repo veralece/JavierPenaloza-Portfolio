@@ -49,7 +49,7 @@ onMounted(() => {
             </ul>
             <h2><span class="func-name">Contact</span><span class="code">()</span></h2>
             <ul>
-                <li><a href="mailto:javier.programador@gmail.com">javier.programador@gmail.com</a></li>
+                <li><a href="mailto:javy.programador@gmail.com">javy.programador@gmail.com</a></li>
                 <li><a href="tel:+19287500873">Call 928.750.0873</a></li>
             </ul>
             <div aria-hidden="true">JaviShell> </div>
