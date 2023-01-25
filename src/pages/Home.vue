@@ -13,7 +13,7 @@ onMounted(() => {
     <article>
         <header>
             <h1>Let's talk about scaling up your business and discover what technology can do for you.</h1>
-            <p>But perhaps you want to get to know me.</p>
+            <p><em>But perhaps you want to get to know me...</em></p>
         </header>
         <section class="console">
             <h2><span class="func-name">Who_Is_Javier</span><span class="code">()</span></h2>
@@ -63,6 +63,13 @@ header {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 2rem;
+}
+
+header h1 {
+    font-family: Raleway;
+    font-size: 3rem;
+    margin: 1em;
 }
 
 li {
@@ -127,6 +134,15 @@ li {
 
     to {
         opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header {
+        font-size: 1.25rem;
     }
 }
 </style> 

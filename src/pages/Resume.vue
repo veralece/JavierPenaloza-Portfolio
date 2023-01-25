@@ -18,7 +18,7 @@ onMounted(() => {
             <ul>
                 <li v-for="e in eduData.education">
                     <h2><strong>{{ e.degree }}</strong>, <em>{{ e.college }}</em></h2>
-                    <p><em>{{ e.graduated ? "Graduated" : "Anticipated Graduation" }}: {{ e.acquisitionDate }}</em></p>
+                    <p class="grad-date"><em>{{ e.graduated ? "Graduated" : "Anticipated Graduation" }}: {{ e.acquisitionDate }}</em></p>
                 </li>
             </ul>
         </section>
@@ -48,6 +48,9 @@ onMounted(() => {
 
 .duties {
     list-style-type: disc;
+}
+.grad-date {
+    font-size: 1.25rem;
 }
 
 ul {
