@@ -1,22 +1,37 @@
 @import url(./normalize.css);
 
+@font-face {
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+  font-family: Raleway;
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Raleway-Italics;
+  src: url(./fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
 :root {
   --dark-mode-text: #fff;
   --dark-mode-bg-color: #242424;
   --dark-mode-secondary-color: var(--light-mode-text);
-  --dark-link-hover: #747bff;
-  --light-link-hover: #9966ff;
+  --dark-link-hover: #9966ff;
+
   --light-mode-text: #1a2e47;
-  --light-mode-bg-color: var(--dark-mode-text);
+  --light-mode-bg-color: #fafaff;
   --light-mode-secondary-color: #f5f3ed;
+  --light-link-hover: #747bff;
+
   --nav-height: 5rem;
   --link-hover: var(--light-link-hover);
   --text-color: var(--light-mode-text);
   --secondary-color: var(--light-mode-secondary-color);
   --bg-color: var(--light-mode-bg-color);
+
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: OpenSans, Inter, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   font-size: 16px;
   font-synthesis: none;
@@ -33,7 +48,10 @@ body {
 main {
   transform: translateY(var(--nav-height));
 }
-
+a {
+  color: #00ccff;
+  text-decoration: none;
+}
 a:hover {
   color: var(--link-hover);
 }

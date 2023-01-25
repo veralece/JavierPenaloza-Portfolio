@@ -149,7 +149,7 @@ input:checked~.mobile-nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 1em;
+    margin: 0 .5em;
 }
 
 #links {
