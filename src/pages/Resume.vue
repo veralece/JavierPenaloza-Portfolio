@@ -14,7 +14,7 @@ onMounted(() => {
 <template>
     <article>
         <section class="card">
-            <h1>Education</h1>
+            <h1 class="text-gradient">Education</h1>
             <ul>
                 <li v-for="e in eduData.education">
                     <h2><strong>{{ e.degree }}</strong>, <em>{{ e.college }}</em></h2>
@@ -23,7 +23,7 @@ onMounted(() => {
             </ul>
         </section>
         <section class="card">
-            <h1>Work</h1>
+            <h1 class="text-gradient">Work</h1>
             <ul>
                 <li v-for="w in workData.experience">
                     <h2><strong>{{ w.jobTitle }}</strong>, <em>{{ w.organization }}</em></h2>
@@ -40,6 +40,8 @@ onMounted(() => {
 <style scoped>
 .card h1 {
     text-align: center;
+    font-weight: 900;
+    font-family: Raleway;
 }
 
 .duties li {

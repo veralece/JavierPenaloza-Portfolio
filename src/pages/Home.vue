@@ -12,8 +12,8 @@ onMounted(() => {
 <template>
     <article>
         <header>
-            <h1>Let's talk about scaling up your business and discover what technology can do for you.</h1>
-            <p><em>But perhaps you want to get to know me...</em></p>
+            <h1>Let's talk about scaling up <span class="text-gradient">your business</span> and discover what technology can do for you.</h1>
+            <p class="text-gradient"><em>But perhaps you want to get to know me first...</em></p>
         </header>
         <section class="console">
             <h2><span class="func-name">Who_Is_Javier</span><span class="code">()</span></h2>
@@ -30,6 +30,7 @@ onMounted(() => {
                 <li>Web Design 🌐✏️</li>
                 <li>Web & API Development 🌐👨‍💻</li>
                 <li>Illustration 🎨</li>
+                <li>Photography 📷</li>
             </ul>
             <h2><span class="func-name">Skills</span><span class="code">()</span></h2>
             <ul>
@@ -66,7 +67,12 @@ header {
     font-size: 2rem;
 }
 
+header p {
+    font-weight: 700;
+}
+
 header h1 {
+    font-weight: 900;
     font-family: Raleway;
     font-size: 3rem;
     margin: 1em;
@@ -86,6 +92,7 @@ li {
 
 .console {
     font-family: monospace;
+    font-size: 1.25em;
     color: aliceblue;
     background-color: var(--light-mode-text);
     padding: 0;
@@ -141,8 +148,13 @@ li {
     header h1 {
         font-size: 2rem;
     }
+
     header {
         font-size: 1.25rem;
+    }
+    
+    .console {
+        font-size: 1.1em;
     }
 }
 </style> 

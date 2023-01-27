@@ -3,9 +3,9 @@ import data from "../data/projects.json";
 </script>
 <template>
     <section id="projects">
-        <h1>Projects</h1>
+        <h1 class="text-gradient">Projects</h1>
         <section class="project card" v-for="project in data.projects">
-            <h2><a :href="project.url">{{ project.projectTitle }}</a></h2>
+            <h2 class="text-gradient"><a :href="project.url">{{ project.projectTitle }}</a></h2>
             <section class="grid project-desc">
                 <p><strong>Problem: </strong>{{ project.problem }}</p>
                 <p><strong>Approach: </strong>{{ project.approach }}</p>
@@ -36,9 +36,11 @@ import data from "../data/projects.json";
 .project-desc.grid {
     padding: 0 1em;
     text-align: left;
+    font-size: 1.1em;
 }
 
 .project.card>h2 {
+    font-size: 1.75rem;
     margin: .83em;
 }
 
@@ -56,6 +58,12 @@ import data from "../data/projects.json";
     width: fit-content;
     padding: .5em 1em;
     margin: .25em;
+}
+
+#projects h1 {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 #projects {

@@ -132,13 +132,15 @@ input:checked~.mobile-nav {
     top: 0;
     width: 100%;
     height: var(--nav-height);
-    background-color: var(--bg-color);
+    background-color: var(--backdrop-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 #logo-link {
     max-height: calc(var(--nav-height) - 20px);
     height: 100%;
-    width: 50%;
+    min-width: 200px;
     background: url(/logo_wordmark.svg) no-repeat;
 }
 
