@@ -69,6 +69,7 @@ header {
 
 header p {
     font-weight: 700;
+    margin: 1em 2em;
 }
 
 header h1 {

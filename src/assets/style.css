@@ -109,6 +109,7 @@ a:hover {
 }
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
+  a:hover,
   .text-gradient {
     color: transparent;
     background: var(--text-gradient);

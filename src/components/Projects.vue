@@ -50,10 +50,11 @@ import data from "../data/projects.json";
     padding-inline-start: 0;
     flex-flow: row wrap;
     justify-content: center;
+    font-weight: bold;
 }
 
 .tech>* {
-    border: 3px solid var(--link-hover);
+    border: 4px solid var(--link-hover);
     border-radius: 5px;
     width: fit-content;
     padding: .5em 1em;
