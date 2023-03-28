@@ -19,6 +19,23 @@
             "imgs": "tierra-caliente"
         },
         {
+            "projectTitle": "Zero Balance Calculator",
+            "techStack": [
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "Budgeting normally comes in the form of spreadsheets, but I wanted to create an app that makes it easy to add/remove income, expenses, and funds without having to manually adjust cells on a spreadsheet.",
+            "approach": "Looked at a typical Zero Balance budget sheet and broken it down into its smallest functional unit, then designed a top-down layout that a user would be able to follow.",
+            "solution": "An application that accepts input for financial items (e.g. an expense or income) and calculates the balances for each category and the final balance.",
+            "results": "Peers were happy to find the site intuitive and helpful since many of them were students with financial struggles.",
+            "url": "https://blue-stone-06da0c010.2.azurestaticapps.net/",
+            "imgs": "zero"
+        },
+        {
             "projectTitle": "Undou: Exercise Logging Application",
             "techStack": [
                 ".NET Core Web API",
@@ -36,23 +53,6 @@
             "results": "The application is functioning with basic features, but due to financial constraints, the back-end isn't the snappiest. Next steps are to work on additional features, such as: creating workout templates, logging food, and implementing a social aspect as well.",
             "url": "https://undou.app",
             "imgs": "logger"
-        },
-        {
-            "projectTitle": "Zero Balance Calculator",
-            "techStack": [
-                "Vue 3",
-                "JavaScript",
-                "TypeScript",
-                "HTML",
-                "CSS",
-                "Azure"
-            ],
-            "problem": "Budgeting normally comes in the form of spreadsheets, but I wanted to create an app that makes it easy to add/remove income, expenses, and funds without having to manually adjust cells on a spreadsheet.",
-            "approach": "Looked at a typical Zero Balance budget sheet and broken it down into its smallest functional unit, then designed a top-down layout that a user would be able to follow.",
-            "solution": "An application that accepts input for financial items (e.g. an expense or income) and calculates the balances for each category and the final balance.",
-            "results": "Peers were happy to find the site intuitive and helpful since many of them were students with financial struggles.",
-            "url": "https://blue-stone-06da0c010.2.azurestaticapps.net/",
-            "imgs": "zero"
         },
         {
             "projectTitle": "Portfolio Site",
