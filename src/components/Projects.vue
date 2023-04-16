@@ -28,9 +28,9 @@ import data from "../data/projects.json";
 </template>
 <style scoped>
 .auto-grid {
+    width: 95%;
     display: grid;
     margin: 0 auto;
-    padding: 0 1em;
     column-gap: 2em;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     max-width: 1600px;
@@ -68,7 +68,7 @@ import data from "../data/projects.json";
 
 .project.img {
     width: calc(100% - 2em);
-    margin: 0 1em;
+    margin: 1em;
     border-radius: var(--card-border-size);
     box-shadow: 0 0 10px 0 #333;
     max-width: 600px;
@@ -107,9 +107,9 @@ import data from "../data/projects.json";
     margin-top: 5em;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
     .auto-grid {
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }
 </style>

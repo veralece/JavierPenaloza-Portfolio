@@ -71,6 +71,7 @@ a:hover {
   position: relative;
   padding: 1em 0;
   margin: 1em auto;
+  box-sizing: border-box;
   box-shadow: -1px 1px 5px 0px var(--link-hover);
   border-radius: 1em;
   background-clip: padding-box;
