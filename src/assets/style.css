@@ -69,7 +69,6 @@ a:hover {
 .card {
   max-width: 800px;
   position: relative;
-  width: 85%;
   padding: 1em 0;
   margin: 1em auto;
   box-shadow: -1px 1px 5px 0px var(--link-hover);

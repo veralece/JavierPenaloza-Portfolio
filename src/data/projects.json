@@ -4,7 +4,7 @@
             "projectTitle": "Tierra Caliente Restaurant Website",
             "techStack": [
                 ".NET Core Web API",
-                "React",
+                "Vue 3",
                 "JavaScript",
                 "TypeScript",
                 "HTML",
@@ -13,10 +13,10 @@
             ],
             "problem": "Owner of Tierra Caliente needed an updated website for their restaurant to support their new business processes.",
             "approach": "Reviewed old site and current business processes with stakeholders to determine direction of website and internal processes.",
-            "solution": "Organization of menu and processes to make the restaurant operate more consistently. Photos of menu items were taken to place on the new site. The new site also facilitates catering requests, and online ordering and a reward system is in the works",
+            "solution": "Organization of menu and processes to make the restaurant operate more consistently. Photos of menu items were taken to place on the new site. The new site also facilitates catering requests and online ordering. A reward system is also in the works",
             "results": "Business owner and stakeholders were pleased with the new solution, and look forward to growing their business with the new technologies and processes.",
             "url": "https://www.tierracalientecatering.com",
-            "imgs": "tierra-caliente"
+            "imgs": "tierra-caliente.png"
         },
         {
             "projectTitle": "Zero Balance Calculator",
@@ -29,11 +29,11 @@
                 "Azure"
             ],
             "problem": "Budgeting normally comes in the form of spreadsheets, but I wanted to create an app that makes it easy to add/remove income, expenses, and funds without having to manually adjust cells on a spreadsheet.",
-            "approach": "Looked at a typical Zero Balance budget sheet and broken it down into its smallest functional unit, then designed a top-down layout that a user would be able to follow.",
+            "approach": "Looked at a typical Zero Balance budget sheet and broke it down into its smallest functional units, then determined the process for capturing and calculating the data to present a breakdown that is easy to digest.",
             "solution": "An application that accepts input for financial items (e.g. an expense or income) and calculates the balances for each category and the final balance.",
             "results": "Peers were happy to find the site intuitive and helpful since many of them were students with financial struggles.",
             "url": "https://blue-stone-06da0c010.2.azurestaticapps.net/",
-            "imgs": "zero"
+            "imgs": "zero.png"
         },
         {
             "projectTitle": "Undou: Exercise Logging Application",
@@ -52,7 +52,7 @@
             "solution": "Created an exercise tracker application with the following features: creating workouts, calculating effort, and viewing history.",
             "results": "The application is functioning with basic features, but due to financial constraints, the back-end isn't the snappiest. Next steps are to work on additional features, such as: creating workout templates, logging food, and implementing a social aspect as well.",
             "url": "https://undou.app",
-            "imgs": "logger"
+            "imgs": "logger.png"
         },
         {
             "projectTitle": "Portfolio Site",
