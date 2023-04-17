@@ -32,6 +32,7 @@ import data from "../data/projects.json";
     display: grid;
     margin: 0 auto;
     column-gap: 2em;
+    align-items: start;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     max-width: 1600px;
 }
@@ -71,7 +72,7 @@ import data from "../data/projects.json";
     margin: 1em;
     border-radius: var(--card-border-size);
     box-shadow: 0 0 10px 0 #333;
-    max-width: 600px;
+    max-width: 475px;
     transition: box-shadow 250ms ease-in-out;
 }
 
