@@ -1,6 +1,25 @@
 {
     "projects": [
         {
+            "projectTitle": "Engrana: eCommerce Integrations",
+            "techStack": [
+                ".NET Core Web API",
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure",
+                "SQL"
+            ],
+            "problem": "I found an opportunity to create a software as a service with eCommerce integrations after having integrated a previous client's website. We exposed their menu online and offered online payments and ordering.",
+            "approach": "I had to review the older codebase and note the modules that could be agnostic of any merchant information. I then analyzed the costs of operating the SaaS, which factors into how much I charge for the SaaS subscription and onboarding new clients.",
+            "solution": "I created a website to demonstrate the product, which includes a demo for the inventory, online ordering, and online payments features. The front-end is a template that can customized to match the brand of the business for quick deployment. The front-end then communicates with my SaaS API to handle the requests between the client and their vendor (e.g. Clover).",
+            "results": "Clients have reached out to me in my local town to get them setup with this product, which has allowed me to better understand their domain and how their specific businesses operate.",
+            "url": "https://proud-sky-05629181e.3.azurestaticapps.net/",
+            "imgs": "engrana.jpg"
+        },
+        {
             "projectTitle": "Tierra Caliente Restaurant Website",
             "techStack": [
                 ".NET Core Web API",
