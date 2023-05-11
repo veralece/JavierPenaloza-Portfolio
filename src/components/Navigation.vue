@@ -61,22 +61,23 @@ ul {
     fill: var(--text-color);
 }
 
+/* 
+does not work on iOS 16.4.1
 input:checked~label .hamburger .line {
     y: 45;
-}
+} */
 
 input:checked~label .hamburger .line:is(.top, .bot) {
     transition: y 200ms, transform 200ms 200ms;
 }
 
 input:checked~label .hamburger .line.top {
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(20px);
 }
 
 input:checked~label .hamburger .line.bot {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(-20px);
 }
-
 input:checked~label .hamburger .line.mid {
     opacity: 0;
     transition: opacity 0ms 200ms
