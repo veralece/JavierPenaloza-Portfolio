@@ -17,7 +17,7 @@
             "solution": "I created a website to demonstrate the product, which includes a demo for the inventory, online ordering, and online payments features. The front-end is a template that can customized to match the brand of the business for quick deployment. The front-end then communicates with my SaaS API to handle the requests between the client and their vendor (e.g. Clover).",
             "results": "Clients have reached out to me in my local town to get them setup with this product, which has allowed me to better understand their domain and how their specific businesses operate.",
             "url": "https://www.engrana.app",
-            "imgs": "engrana.jpg"
+            "imgs": "engrana_logo.webp"
         },
         {
             "projectTitle": "Tierra Caliente Restaurant Website",
