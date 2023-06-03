@@ -20,6 +20,23 @@
             "imgs": "engrana_logo.webp"
         },
         {
+            "projectTitle": "Virtuous Enterprises",
+            "techStack": [
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "Client approached me to create a website for their new Landscaping business.",
+            "approach": "I gathered the requirements with the client, and reviewed the competition to see what was and was not working with their sites.",
+            "solution": "A website that displays the business's service offerings, mission statement, and how to contact them.",
+            "results": "Client was happy to get their website deployed, and is ready to collaborate again when the site needs to be updated.",
+            "url": "https://www.virtuous.enterprises",
+            "imgs": "virtuous.jpg"
+        },
+        {
             "projectTitle": "Tierra Caliente Restaurant Website",
             "techStack": [
                 ".NET Core Web API",
