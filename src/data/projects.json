@@ -20,6 +20,25 @@
             "imgs": "engrana_logo.webp"
         },
         {
+            "projectTitle": "Lizard Satin Skincare",
+            "techStack": [
+                ".NET Core Web API",
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure",
+                "SQL"
+            ],
+            "problem": "Client recently started skincare business and needed a website to book appointments, and to display services & products.",
+            "approach": "I gathered the requirements with the client, and reviewed the competition to see what was and was not working with their sites.",
+            "solution": "An eCommerce website that allows visiting customers to order products, book services, and send inquiries.",
+            "results": "Client was happy to get their website deployed, and is ready to collaborate again when it needs to be updated.",
+            "url": "https://www.lizardsatinskincare.com",
+            "imgs": "lizard.jpg"
+        },
+        {
             "projectTitle": "Virtuous Enterprises",
             "techStack": [
                 "Vue 3",
