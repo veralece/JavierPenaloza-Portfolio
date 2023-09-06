@@ -5,7 +5,7 @@
     <footer>
         <h1>This site was created with the help of coffee, my pets, and my wife.</h1>
         <section class="grid">
-            <a href="mailto:javier.programador@gmail.com">email me!</a>
+            <a href="mailto:javy.programador@gmail.com">email me!</a>
             <a href="https://github.com/veralece/JavierPenaloza-Portfolio">source on github</a>
         </section>
         <aside>
