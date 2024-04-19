@@ -1,6 +1,25 @@
 {
     "projects": [
         {
+            "projectTitle": "Engrana: Business Filings",
+            "techStack": [
+                ".NET Core Web API",
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Azure",
+                "SQL"
+            ],
+            "problem": "I found an opportunity to create a software as a service for Business Filings within Arizona & California after having integrated a previous client's website.",
+            "approach": "I reviewed the requirements for registering a business within the states and used those as the requirements to build the site.",
+            "solution": "I created a website to demo the business registration process. The front-end is a template that can customized to match the brand of the business for quick deployment. The front-end then communicates with my SaaS API to facilitate the processes of saving the information and processing payments.",
+            "results": "I created this application for clients who are interested in utilizing this application for to facilitate their business registration needs.",
+            "url": "https://business-filings.engrana.app",
+            "imgs": "mobile-home.png"
+        },
+        {
             "projectTitle": "Engrana: eCommerce Integrations",
             "techStack": [
                 ".NET Core Web API",
@@ -18,42 +37,6 @@
             "results": "Clients have reached out to me in my local town to get them setup with this product, which has allowed me to better understand their domain and how their specific businesses operate.",
             "url": "https://www.engrana.app",
             "imgs": "engrana_logo.webp"
-        },
-        {
-            "projectTitle": "Lizard Satin Skincare",
-            "techStack": [
-                ".NET Core Web API",
-                "Vue 3",
-                "JavaScript",
-                "TypeScript",
-                "HTML",
-                "CSS",
-                "Azure",
-                "SQL"
-            ],
-            "problem": "Client recently started skincare business and needed a website to book appointments, and to display services & products.",
-            "approach": "I gathered the requirements with the client, and reviewed the competition to see what was and was not working with their sites.",
-            "solution": "An eCommerce website that allows visiting customers to order products, book services, and send inquiries.",
-            "results": "Client was happy to get their website deployed, and is ready to collaborate again when it needs to be updated.",
-            "url": "https://www.lizardsatinskincare.com",
-            "imgs": "lizard.jpg"
-        },
-        {
-            "projectTitle": "Virtuous Enterprises",
-            "techStack": [
-                "Vue 3",
-                "JavaScript",
-                "TypeScript",
-                "HTML",
-                "CSS",
-                "Azure"
-            ],
-            "problem": "Client approached me to create a website for their new Landscaping business.",
-            "approach": "I gathered the requirements with the client, and reviewed the competition to see what was and was not working with their sites.",
-            "solution": "A website that displays the business's service offerings, mission statement, and how to contact them.",
-            "results": "Client was happy to get their website deployed, and is ready to collaborate again when the site needs to be updated.",
-            "url": "https://www.virtuous.enterprises",
-            "imgs": "virtuous.jpg"
         },
         {
             "projectTitle": "Tierra Caliente Restaurant Website",
