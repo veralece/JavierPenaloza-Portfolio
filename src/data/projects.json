@@ -1,22 +1,23 @@
 {
     "projects": [
         {
-            "projectTitle": "Engrana: Business Filings",
+            "projectTitle": "Money Matters Business Filings (WIP)",
             "techStack": [
-                ".NET Core Web API",
+                "Supabase",
                 "Vue 3",
                 "JavaScript",
                 "TypeScript",
                 "HTML",
                 "CSS",
                 "Azure",
-                "SQL"
+                "PostgreSQL",
+                "Stripe"
             ],
-            "problem": "I found an opportunity to create a software as a service for Business Filings within Arizona & California after having integrated a previous client's website.",
+            "problem": "I received an opportunity to create a software as a service for Business Filings.",
             "approach": "I reviewed the requirements for registering a business within the states and used those as the requirements to build the site.",
-            "solution": "I created a website to demo the business registration process. The front-end is a template that can customized to match the brand of the business for quick deployment. The front-end then communicates with my SaaS API to facilitate the processes of saving the information and processing payments.",
+            "solution": "I created a website to demo the business registration process but it is still a work in progress. The front-end is a template that can customized to match the brand of the business for quick deployment. The front-end then communicates with my SaaS API to facilitate the processes of saving the information and processing payments.",
             "results": "I created this application for clients who are interested in utilizing this application for to facilitate their business registration needs.",
-            "url": "https://mmbf-site.engrana.app",
+            "url": "https://business-filings.engrana.app",
             "imgs": "mobile-home.png"
         },
         {
