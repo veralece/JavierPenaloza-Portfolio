@@ -12,15 +12,15 @@ onMounted(() => {
 <template>
     <article>
         <header>
-            <h1>Let's talk about scaling up <span class="text-gradient">your business</span> and discover what technology can do for you.</h1>
-            <p class="text-gradient"><em>But perhaps you want to get to know me first...</em></p>
+            <h1>Let's talk about scaling up <span class="text-gradient">your business</span> and discover what
+                technology can do for you.</h1>
         </header>
         <section class="console">
-            <h2><span class="func-name">Who_Is_Javier</span><span class="code">()</span></h2>
+            <h2><span class="func-name">WhoIs</span><span class="code">()</span></h2>
             <ul>
                 <li>Arizona Native 🌵</li>
                 <li>Husband 🤵🏽</li>
-                <li>Cat & Dog Dad 🐈🐕</li>
+                <li>Cat & Dog Dad 🐈🐈🐕</li>
                 <li>Fighting Game Enthusiast 🕹️</li>
                 <li>Game Developer 🕹️👨‍💻</li>
                 <li>Bicyclist 🚴🏽‍♂️</li>
@@ -28,9 +28,9 @@ onMounted(() => {
             <h2><span class="func-name">Services</span><span class="code">()</span></h2>
             <ul>
                 <li>Web Design 🌐✏️</li>
-                <li>Web & API Development 🌐👨‍💻</li>
-                <li>Illustration 🎨</li>
-                <li>Photography 📷</li>
+                <li>Web Integrations 🌐⛓️</li>
+                <li>API Development 🌐👨‍💻</li>
+                <li>SEO Consulting 🌐📈</li>
             </ul>
             <h2><span class="func-name">Skills</span><span class="code">()</span></h2>
             <ul>
@@ -47,13 +47,14 @@ onMounted(() => {
                         href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/?OCID=AIDcmm5edswduu_SEM_c919ed88e836143047d38e59a53c56ee:G:s&ef_id=c919ed88e836143047d38e59a53c56ee:G:s&msclkid=c919ed88e836143047d38e59a53c56ee">Azure</a>
                 </li>
                 <li><a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git">git</a></li>
+                <li><a href="https://supabase.com/">supabase</a></li>
             </ul>
             <h2><span class="func-name">Contact</span><span class="code">()</span></h2>
             <ul>
                 <li><a href="mailto:javy.programador@gmail.com">javy.programador@gmail.com</a></li>
-                <li><a href="tel:+19287500873">Call 928.750.0873</a></li>
+                <li><a href="https://www.linkedin.com/in/javier-penaloza-14ab48181/">Linkedin</a></li>
             </ul>
-            <div aria-hidden="true">JaviShell> </div>
+            <div aria-hidden="true">What's your next step?> </div>
         </section>
         <Projects />
     </article>
@@ -113,7 +114,7 @@ li {
 }
 
 .console::before {
-    content: 'JaviShell';
+    content: "Javier's Information";
     background-color: #333;
     display: block;
     padding: .5em 1em;
@@ -153,9 +154,9 @@ li {
     header {
         font-size: 1.25rem;
     }
-    
+
     .console {
         font-size: 1.1em;
     }
 }
-</style> 
+</style>
