@@ -1,6 +1,25 @@
 {
     "projects": [
         {
+            "projectTitle": "Tierra Caliente Restaurant Website",
+            "techStack": [
+                ".NET Core Web API",
+                "Vue 3",
+                "JavaScript",
+                "TypeScript",
+                "GSAP",
+                "HTML",
+                "CSS",
+                "Azure"
+            ],
+            "problem": "Owner of Tierra Caliente needed an updated website for their restaurant to support their new business processes.",
+            "approach": "Reviewed old site and current business processes with stakeholders to determine direction of website and internal processes.",
+            "solution": "Organization of menu and processes to make the restaurant operate more consistently. Photos of menu items were taken to place on the new site. The new site also facilitates catering requests and online ordering. A reward system is also in the works",
+            "results": "Business owner and stakeholders were pleased with the new solution, and look forward to growing their business with the new technologies and processes.",
+            "url": "https://www.tierracalientecatering.com",
+            "imgs": "tierra-caliente.png"
+        },
+        {
             "projectTitle": "Money Matters Business Filings (WIP)",
             "techStack": [
                 "Supabase",
@@ -38,24 +57,6 @@
             "results": "Clients have reached out to me in my local town to get them setup with this product, which has allowed me to better understand their domain and how their specific businesses operate.",
             "url": "https://www.engrana.app",
             "imgs": "engrana_logo.webp"
-        },
-        {
-            "projectTitle": "Tierra Caliente Restaurant Website",
-            "techStack": [
-                ".NET Core Web API",
-                "Vue 3",
-                "JavaScript",
-                "TypeScript",
-                "HTML",
-                "CSS",
-                "Azure"
-            ],
-            "problem": "Owner of Tierra Caliente needed an updated website for their restaurant to support their new business processes.",
-            "approach": "Reviewed old site and current business processes with stakeholders to determine direction of website and internal processes.",
-            "solution": "Organization of menu and processes to make the restaurant operate more consistently. Photos of menu items were taken to place on the new site. The new site also facilitates catering requests and online ordering. A reward system is also in the works",
-            "results": "Business owner and stakeholders were pleased with the new solution, and look forward to growing their business with the new technologies and processes.",
-            "url": "https://www.tierracalientecatering.com",
-            "imgs": "tierra-caliente.png"
         },
         {
             "projectTitle": "Zero Balance Calculator",
