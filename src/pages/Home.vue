@@ -52,7 +52,6 @@ onMounted(() => {
             <h2><span class="func-name">Contact</span><span class="code">()</span></h2>
             <ul>
                 <li><a href="mailto:javy.programador@gmail.com">javy.programador@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/javier-penaloza-14ab48181/">Linkedin</a></li>
             </ul>
             <div aria-hidden="true">What's your next step?> </div>
         </section>

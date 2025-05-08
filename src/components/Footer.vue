@@ -6,7 +6,6 @@
         <h1>This site was created with the help of coffee, my pets, and my wife.</h1>
         <section class="grid">
             <a href="mailto:javy.programador@gmail.com">e-mail me!</a>
-            <a href="https://www.linkedin.com/in/javier-penaloza-14ab48181/">linkedin</a>
             <a href="https://github.com/veralece/JavierPenaloza-Portfolio">source on github</a>
         </section>
         <aside>
