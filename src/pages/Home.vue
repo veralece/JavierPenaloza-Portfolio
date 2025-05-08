@@ -16,12 +16,11 @@ onMounted(() => {
                 technology can do for you.</h1>
         </header>
         <section class="console">
-            <h2><span class="func-name">WhoIs</span><span class="code">()</span></h2>
+            <h2><span class="func-name">Identity</span><span class="code">()</span></h2>
             <ul>
                 <li>Arizona Native 🌵</li>
                 <li>Husband 🤵🏽</li>
                 <li>Cat & Dog Dad 🐈🐈🐕</li>
-                <li>Fighting Game Enthusiast 🕹️</li>
                 <li>Game Developer 🕹️👨‍💻</li>
                 <li>Bicyclist 🚴🏽‍♂️</li>
             </ul>
