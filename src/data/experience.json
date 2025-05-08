@@ -1,36 +1,46 @@
 {
-    "experience": [
-        {
-            "date": "Janurary 2021 - October 2022",
-            "jobTitle": "Contracted Programmer",
-            "organization": "Knowledge Services",
-            "duties": [
-                "Worked primarily for the City of Tempe",
-                "Supporting a wide variety of applications that vary in size from small to large that facilitate the business processes for business units such as: City Hall, Community Services, Municipal Utilities, and Health Services.",
-                "Deploying, upgrading, and maintaining home-grown and vendor applications as requirements evolve and assets depreciate, such as server operating systems or aging frameworks that lose support.",
-                "Creating detailed troubleshooting and architecture documentation that is utilized by all areas of IT, from Service Desk to our Security and Infrastructure teams."
-            ]
-        },
-        {
-            "date": "October 2019 - Janurary 2021",
-            "jobTitle": "Service Desk Technician II",
-            "organization": "Arizona Western College",
-            "duties": [
-                "Scripting and automation through PowerShell",
-                "Maintenance of internal web applications",
-                "Implemented and managed a new ITSM system",
-                "All duties that encompassed Service Desk Technician I"
-            ]
-        },
-        {
-            "date": "Janurary 2017 - October 2019",
-            "jobTitle": "Service Desk Technician I",
-            "organization": "Arizona Western College",
-            "duties": [
-                "Utilizing Microsoft 365 applications to enhance business processes of operational staff",
-                "End-user support",
-                "Deploying Windows images"
-            ]
-        }
-    ]
+  "experience": [
+    {
+      "date": "August 2024 - Present",
+      "jobTitle": "IT Trainer",
+      "organization": "Desert Diamond Casinos",
+      "duties": [
+        "Coordinated trainings on IT systems with vendors and our other departments.",
+        "Created job aides, guides, and flow-charts for navigating complex processes within our IT environment.",
+        "Introduced ITIL Asset and Incident Management concepts to IT Support team via presentations and training guides on systems such as SCCM and our ITSM system."
+      ]
+    },
+    {
+      "date": "Janurary 2021 - October 2022",
+      "jobTitle": "Contracted Programmer",
+      "organization": "Knowledge Services",
+      "duties": [
+        "Worked primarily for the City of Tempe",
+        "Supporting a wide variety of applications that vary in size from small to large that facilitate the business processes for business units such as: City Hall, Community Services, Municipal Utilities, and Health Services.",
+        "Deploying, upgrading, and maintaining home-grown and vendor applications as requirements evolve and assets depreciate, such as server operating systems or aging frameworks that lose support.",
+        "Creating detailed troubleshooting and architecture documentation that is utilized by all areas of IT, from Service Desk to our Security and Infrastructure teams."
+      ]
+    },
+    {
+      "date": "October 2019 - Janurary 2021",
+      "jobTitle": "Service Desk Technician II",
+      "organization": "Arizona Western College",
+      "duties": [
+        "Scripting and automation through PowerShell",
+        "Maintenance of internal web applications",
+        "Implemented and managed a new ITSM system",
+        "All duties that encompassed Service Desk Technician I"
+      ]
+    },
+    {
+      "date": "Janurary 2017 - October 2019",
+      "jobTitle": "Service Desk Technician I",
+      "organization": "Arizona Western College",
+      "duties": [
+        "Utilizing Microsoft 365 applications to enhance business processes of operational staff",
+        "End-user support",
+        "Deploying Windows images"
+      ]
+    }
+  ]
 }
